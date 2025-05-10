@@ -42,3 +42,4 @@ publish:
   provider: github
   owner: luoying1
   repo: electron-vite-demo
+  releaseType: release

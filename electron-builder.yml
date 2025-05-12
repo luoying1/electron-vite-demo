@@ -49,8 +49,3 @@ publish:
   owner: luoying1
   repo: electron-vite-demo
   releaseType: release
-  releaseNotes: [
-    "新增：xxxx",
-    "优化：xxxx",
-    "修复：xxxx"
-  ]

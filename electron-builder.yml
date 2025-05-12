@@ -1,5 +1,5 @@
 appId: com.electron.app
-productName: electron-vite-demo2
+productName: electron-vite-demo
 directories:
   buildResources: build
 files:
@@ -12,7 +12,7 @@ files:
 asarUnpack:
   - resources/**
 win:
-  executableName: electron-vite-demo2
+  executableName: electron-vite-demo
 nsis:
   artifactName: ${name}-${version}-setup.${ext}
   shortcutName: ${productName}

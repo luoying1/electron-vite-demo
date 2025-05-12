@@ -26,14 +26,20 @@ mac:
     - NSDocumentsFolderUsageDescription: Application requests access to the user's Documents folder.
     - NSDownloadsFolderUsageDescription: Application requests access to the user's Downloads folder.
   notarize: false
+  target:
+    - target: dmg
+      arch:
+        - arm64
+        - x64
 dmg:
-  artifactName: ${name}-${version}.${ext}
+  artifactName: ${name}-${version}-${arch}.${ext}
 linux:
   target:
-    - AppImage
-    - deb
-    - rpm
-  maintainer: electronjs.org
+    - target: AppImage
+      arch:
+        - arm64
+        - x64
+  maintainer: github.com/luoying1
   category: Utility
 appImage:
   artifactName: ${name}-${version}.${ext}

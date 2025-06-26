@@ -13,7 +13,6 @@ asarUnpack:
   - resources/**
 win:
   executableName: electron-vite-demo
-  differentialPackage: false
 nsis:
   artifactName: ${name}-${version}-setup.${ext}
   shortcutName: ${productName}
@@ -27,7 +26,6 @@ mac:
     - NSDocumentsFolderUsageDescription: Application requests access to the user's Documents folder.
     - NSDownloadsFolderUsageDescription: Application requests access to the user's Downloads folder.
   notarize: false
-  differentialPackage: false
   target:
     - target: dmg
       arch:
@@ -51,3 +49,4 @@ publish:
   owner: luoying1
   repo: electron-vite-demo
   releaseType: release
+  differentialUpdate: false

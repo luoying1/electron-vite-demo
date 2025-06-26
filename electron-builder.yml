@@ -49,4 +49,3 @@ publish:
   owner: luoying1
   repo: electron-vite-demo
   releaseType: release
-differentialPackage: false
